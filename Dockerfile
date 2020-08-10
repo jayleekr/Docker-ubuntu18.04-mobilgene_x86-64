@@ -22,6 +22,7 @@ RUN pip3 install lxml jinja2 treelib
 
 #install code-server
 RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+RUN curl -fsSL https://code-server.dev/install.sh | sh
 
 #install clang 6.0
 RUN apt-get update && apt-get install -y software-properties-common
